@@ -76,7 +76,7 @@ public class CommodityChannelIndex {
     }
 
     private void calculateCCIRate() {
-        cciPoint = (typicalPrices[typicalPrices.length-1] - mean)/(Constants.CCI_CALCULATE_CONSTANT * meanDeviation);
+        cciPoint = (typicalPrices[0] - mean)/(Constants.CCI_CALCULATE_CONSTANT * meanDeviation);
     }
 
 }
